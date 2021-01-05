@@ -8,19 +8,22 @@
 l = [3,6,1,10,5,2]
 
 #Fonction permettant le tri
-def tri_insertion(l):
+def triInsertion(l):
     
-    
-    for i in range(1,len(l)):
+    #Passage en revu des éléments de la liste, 1 par 1
+    for i in range(1,len(l)): #
         en_cours = l[i]
         j = i
         
-        #décalage des éléments du l
+        #Décalage des éléments de la liste
         while j>0 and l[j-1]>en_cours:
             l[j]=l[j-1]
             j = j-1
-        #on insère l'élément à sa place
+        
+        #Insertion de l'élément trié à sa place dans la liste
         l[j]=en_cours
-    return(l)
+    
+    return(l) #Valeur de retour = liste triée
 
-print(tri_insertion(l))
+#Affiche le résultat du tri
+print(triInsertion(l))
