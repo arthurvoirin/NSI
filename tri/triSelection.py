@@ -1,3 +1,8 @@
+#Méthode du tri par sélection
+#Author : Arthur Voirin
+#Dernière modification : 21/01/2021
+
+# ----------------------- #
 
 L = [3,2,7,1,9,5,6,8,4] #Liste à trier
 
